@@ -273,8 +273,8 @@ module.exports = A17 = async (A17, m, chatUpdate, store) => {
     const participants = m.isGroup ? await groupMetadata.participants : ''
     const groupAdmins = m.isGroup ? await participants.filter(v => v.admin !== null).map(v => v.id) : ''
     const groupOwner = m.isGroup ? groupMetadata.owner : ''
-    const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
-    const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
+    const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : true
+    const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : true
     const isUser = pendaftar.includes(m.sender)
     const isBan = banUser.includes(m.sender)
     const welcm = m.isGroup ? wlcm.includes(from) : false
@@ -770,7 +770,7 @@ if (responses.hasOwnProperty(smallinput)) {
     buttons: buttons,
     headerType: 4, */
     contextInfo:{externalAdreply:{
-    title:"Powered by Slasher",
+    title:"Powered by montana",
     body: " ", 
     thumbnail: fs.readFileSync("Assets/pic2.jpg"),
     mediaType:1,
@@ -1135,7 +1135,7 @@ A17.sendMessage(from, { react: { text: '❤', key: m.key }});
         const txtmsg = `*📮 Report Message*\n\n*Sender ➛* wa.me/${m.sender.split("@")[0]}\n\n*Group Name ➛* ${groupName}\n\n*Message ➛*  ${text}`
       for (let mod of global.Owner.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != '6297175943@s.whatsapp.net'))
       await A17.sendMessage(`${mod}`, {text: `${txtmsg}`},  { quoted: m })
-      await A17.sendMessage(`120363166934319084@g.us`, {text: `${txtmsg}`, mentions: groupAdmins}, { quoted: m })
+      await A17.sendMessage(`255757917366`, {text: `${txtmsg}`, mentions: groupAdmins}, { quoted: m })
         reply(`*✅ Your Report has been submitted Successfully to Support group & Owner*\n\n*You will get response shortly... ♥️*`); 
      }
      break;
@@ -4211,7 +4211,7 @@ reply(mess.waiting)
        if (/1917/.test(command)) link = 'https://textpro.me/1917-style-text-effect-online-980.html'
        if (/leaves/.test(command)) link = 'https://textpro.me/natural-leaves-text-effect-931.html'
        let anu = await maker.textpro(link, q)
-          A17.sendMessage(m.chat, { image: { url: anu }, caption: `Made by Slasher...  🪄` }, { quoted: m })
+          A17.sendMessage(m.chat, { image: { url: anu }, caption: `Made by montana...  🪄` }, { quoted: m })
        }
 
 break;
@@ -5321,7 +5321,7 @@ case 'swm': case 'take': case 'stickerwm': case 'steal':{
   if (isBanChat) return reply(mess.bangc);
 A17.sendMessage(from, { react: { text: "🫡" , key: m.key }})
 
-if (!args.join(" ")) return reply(`Like use -take X-2.0|By: Slasher`)
+if (!args.join(" ")) return reply(`Like use -take X-2.0|By: montana`)
 const swn = args.join(" ")
 const pcknm = swn.split("|")[0];
 const atnm = swn.split("|")[1];
@@ -6672,7 +6672,7 @@ break;
 ❒│▸  *Oᴡɴᴇʀ : ${global.OwnerName}* 🎐
 ❒│▸  *Prefix : ${prefix}* 🕹
 ❒│▸  *Rᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}* 💻
-❒│▸ *Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ Sʟᴀꜱʜᴇʀ-Sᴇʀ* 🐉
+❒│▸ *Dᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ frank montana🇹🇿* 🐉
 ┬│
 │╰───────────···▸▸
 └──────────────···▸▸▸
@@ -6964,7 +6964,7 @@ break;
 ⬡│       ᴛʜᴇꜱᴇ ᴄᴏᴍᴍᴀɴᴅꜱ ᴛʏᴘᴇ
 ⬡│      *${prefix}<ᴄᴏᴍᴍᴀɴᴅ ɴᴀᴍᴇ>*
 ⬡│
-⬡│▸ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ xʟɪcᴏɴ-ᴍᴅ
+⬡│▸ ⚡ ᴘᴏᴡᴇʀᴇᴅ ʙʏ frank montana 👉 0757917366
 ┬│
 │╰────────────···▸▸
 ╰ ──────────────···▸▸▸`
