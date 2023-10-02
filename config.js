@@ -24,8 +24,8 @@ global.OwnerName = "frank montana";
 global.BotName = "montana";
 global.packname = "X-2.0 Bot";                             //Do not change.
 global.author = "By: montana";                               //Do not change.
-global.BotSourceCode = "https://github.com/ahil15/Xlicon-v2"; //Do not change.
-global.SupportGroupLink = "https://chat.whatsapp.com/BVEGnjH15uD6eLdz4kAuev"; 
+global.BotSourceCode = ""; //Do not change.
+global.SupportGroupLink = "https://telegra.ph/file/f27c78c69058d70c9947b.jpg"; 
 
 
 //
@@ -33,8 +33,8 @@ global.sessionName = "session";                          //Do not change.
 
 
 //
-global.prefa = ["."];                                    //Default prefix here.
-global.openAiAPI = "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";
+global.prefa = ["+"];                                    //Default prefix here.
+global.openAiAPI = "7DQYqH9PtFmo3z5n8Ya3T3BlbkFJ4edZXLI2tlbgo3HI5sx1";
 
 
 //
