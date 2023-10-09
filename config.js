@@ -1,4 +1,4 @@
-const fs = require("fs");
+9const fs = require("fs");
 const chalk = require("chalk");
 
 
@@ -33,7 +33,7 @@ global.sessionName = "session";                          //Do not change.
 
 
 //
-global.prefa = ["+"];                                    //Default prefix here.
+global.prefix = [""];                                    //Default prefix here.
 global.openAiAPI = "7DQYqH9PtFmo3z5n8Ya3T3BlbkFJ4edZXLI2tlbgo3HI5sx1";
 
 
